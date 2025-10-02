@@ -448,6 +448,11 @@ footer p {
     font-size: 1rem;
   }
 
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .next-steps-section {
     text-align: left;
   }
