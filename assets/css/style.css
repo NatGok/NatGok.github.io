@@ -202,6 +202,8 @@ h4 {
   overflow: hidden;
   width: 100%;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -251,8 +253,9 @@ h4 {
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-between;
+  gap: 8px;
+  justify-content: flex-start;
+  margin-top: auto;
 }
 
 .project-tech span {
