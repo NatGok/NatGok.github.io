@@ -452,17 +452,7 @@ footer p {
     text-align: left;
   }
 
-  .contact-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
 
-  .contact-button {
-    width: 100%;
-    max-width: 280px;
-    justify-content: center;
-  }
 
   .tech-stack {
     justify-content: center;
@@ -497,6 +487,18 @@ footer p {
 
   .tech-item {
     font-size: 0.8rem;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .contact-button {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
   }
 }
 
