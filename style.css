@@ -103,6 +103,96 @@ footer {
   color: #0c1e6b;
 }
 
+/* Projects Section */
+.projects {
+  margin: 40px 0;
+  padding: 30px 0;
+}
+
+.projects h2 {
+  font-size: 1.8rem;
+  color: #0c2a47;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-link.project-coming-soon {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.project-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-icon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-1 {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.project-2 {
+  background: linear-gradient(135deg, #4ecdc4, #44bd87);
+}
+
+.project-3 {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.project-title {
+  position: relative;
+  z-index: 2;
+}
+
+.project-link:hover .project-icon {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.project-link:hover .project-icon:before {
+  opacity: 1;
+}
+
+.project-link.project-coming-soon:hover .project-icon {
+  transform: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* Mobile-first responsive design */
 @media (max-width: 768px) {
   .container {
@@ -116,6 +206,20 @@ footer {
 
   p {
     font-size: 1rem;
+  }
+
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-icons {
+    gap: 20px;
+  }
+
+  .project-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 0.8rem;
   }
 
   .links {
@@ -145,6 +249,16 @@ footer {
 
   p {
     font-size: 0.95rem;
+  }
+
+  .projects h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 0.7rem;
   }
 }
 
