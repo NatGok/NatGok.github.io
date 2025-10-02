@@ -31,9 +31,14 @@ body {
 h1 {
   font-size: 3rem;
   font-weight: 800;
-  color: #0c2a47;
+  color: white;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #b9bfda, #764ba2);
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px 30px;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  display: inline-block;
+  text-align: center;
 }
 
 p {
