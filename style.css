@@ -73,7 +73,9 @@ a:hover {
 .link-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 12px 24px;
+  min-height: 60px;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   text-decoration: none;
@@ -81,6 +83,8 @@ a:hover {
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  text-align: center;
+  line-height: 1.3;
 }
 
 .link-button:hover {
@@ -124,8 +128,12 @@ footer {
 }
 
 .project-link {
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: none !important;
 }
 
 .project-link.project-coming-soon {
@@ -140,26 +148,29 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 700;
   font-size: 0.9rem;
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 .project-icon:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
   opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .project-1 {
