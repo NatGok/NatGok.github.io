@@ -363,7 +363,8 @@ p {
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 16px;
+  justify-content: space-between;
 }
 
 .project-tech span {
