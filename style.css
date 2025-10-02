@@ -1,4 +1,11 @@
-/* Reset and base styles */
+/* =============================================================================
+   NATKAYA.ME STYLESHEET
+   A modern, responsive portfolio website
+   ============================================================================= */
+
+/* =============================================================================
+   CSS RESET & BASE STYLES
+   ============================================================================= */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +21,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 15px;
 }
 
+/* =============================================================================
+   MAIN CONTAINER
+   ============================================================================= */
 .container {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -28,13 +38,16 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
+/* =============================================================================
+   TYPOGRAPHY
+   ============================================================================= */
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   background: linear-gradient(135deg, #667eea, #764ba2);
-  padding: 20px 30px;
+  padding: 15px 25px;
   border-radius: 25px;
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
   display: inline-block;
@@ -48,14 +61,32 @@ p {
   line-height: 1.2;
 }
 
-.content {
-  margin: 30px 0;
+.subtitle {
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 
+.year-highlight {
+  font-weight: 700;
+  color: #0c1e6b;
+}
+
+/* =============================================================================
+   CONTENT SECTIONS
+   ============================================================================= */
+.content {
+  margin: 20px 0;
+}
+
+/* =============================================================================
+   LINKS & BUTTONS
+   ============================================================================= */
 a {
   color: #667eea;
   text-decoration: none;
-  font-weight: 00;
+  font-weight: 400;
   transition: all 0.3s ease;
   padding: 2px 4px;
   border-radius: 2px;
@@ -70,9 +101,9 @@ a:hover {
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .link-button {
@@ -99,6 +130,106 @@ a:hover {
   color: white;
 }
 
+/* =============================================================================
+   PROJECTS SECTION
+   ============================================================================= */
+.projects {
+  margin: 25px 0;
+  padding: 5px 0;
+}
+
+.projects h2 {
+  font-size: 1.6rem;
+  color: #0c2a47;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  text-decoration: none !important;
+}
+
+.project-link.project-coming-soon {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.project-icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-icon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  opacity: 0;
+}
+
+.project-title {
+  position: relative;
+  z-index: 2;
+}
+
+/* Project color schemes */
+.project-1 {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+}
+
+.project-2 {
+  background: linear-gradient(135deg, #4ecdc4, #44bd87);
+}
+
+.project-3 {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+/* Project hover effects */
+.project-link:hover .project-icon {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.project-link:hover .project-icon:before {
+  opacity: 1;
+}
+
+.project-link.project-coming-soon:hover .project-icon {
+  transform: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =============================================================================
+   FOOTER
+   ============================================================================= */
 footer {
   margin-top: 40px;
   padding-top: 20px;
@@ -135,109 +266,11 @@ footer {
   height: 20px;
 }
 
-.year-highlight {
-  font-weight: 700;
-  color: #0c1e6b;
-}
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================= */
 
-/* Projects Section */
-.projects {
-  margin: 40px 0;
-  padding: 10px 0;
-}
-
-.projects h2 {
-  font-size: 1.8rem;
-  color: #0c2a47;
-  margin-bottom: 25px;
-  font-weight: 600;
-}
-
-.project-icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.project-link {
-  text-decoration: none !important;
-  transition: all 0.3s ease;
-}
-
-.project-link:hover {
-  text-decoration: none !important;
-}
-
-.project-link.project-coming-soon {
-  opacity: 0.6;
-  cursor: default;
-}
-
-.project-icon {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-.project-icon:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    transparent 50%
-  );
-  opacity: 0;
-}
-
-.project-1 {
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-}
-
-.project-2 {
-  background: linear-gradient(135deg, #4ecdc4, #44bd87);
-}
-
-.project-3 {
-  background: linear-gradient(135deg, #9b59b6, #8e44ad);
-}
-
-.project-title {
-  position: relative;
-  z-index: 2;
-}
-
-.project-link:hover .project-icon {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-.project-link:hover .project-icon:before {
-  opacity: 1;
-}
-
-.project-link.project-coming-soon:hover .project-icon {
-  transform: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Mobile-first responsive design */
+/* Tablet styles */
 @media (max-width: 768px) {
   .container {
     padding: 30px 20px;
@@ -278,6 +311,7 @@ footer {
   }
 }
 
+/* Mobile styles */
 @media (max-width: 480px) {
   body {
     padding: 10px;
@@ -306,7 +340,7 @@ footer {
   }
 }
 
-/* Large screen optimizations */
+/* Large screen styles */
 @media (min-width: 1200px) {
   .container {
     padding: 50px;
