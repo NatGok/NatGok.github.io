@@ -110,8 +110,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 24px;
-  min-height: 60px;
+  padding: 10px 20px;
+  min-height: 50px;
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   text-decoration: none;
@@ -190,7 +190,11 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
   opacity: 0;
 }
 
@@ -231,8 +235,8 @@ a:hover {
    FOOTER
    ============================================================================= */
 footer {
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 25px;
+  padding-top: 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   color: #7f8c8d;
   font-size: 0.9rem;
@@ -241,8 +245,8 @@ footer {
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .footer-icon {
