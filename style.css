@@ -124,20 +124,6 @@ h1 {
   font-weight: 400;
 }
 
-.status-indicator {
-  width: 8px;
-  height: 8px;
-  background: var(--accent-success);
-  border-radius: 50%;
-  animation: pulse 2s infinite;
-}
-
-.year-highlight {
-  color: var(--accent-primary);
-  font-weight: 600;
-  font-family: "JetBrains Mono", monospace;
-}
-
 h2 {
   font-size: 1.5rem;
   font-weight: 600;
@@ -166,16 +152,6 @@ p {
   color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 16px;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
 }
 
 /* =============================================================================
@@ -267,14 +243,15 @@ p {
 
 .contact-buttons {
   display: flex;
-  gap: 16px;
-  justify-content: center;
+  gap: 32px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .contact-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 12px 24px;
   border-radius: 8px;
@@ -282,6 +259,7 @@ p {
   font-weight: 500;
   font-size: 0.95rem;
   transition: all 0.3s ease;
+  flex: 1;
   border: 1px solid;
   position: relative;
   overflow: hidden;
@@ -311,34 +289,6 @@ p {
   border-color: var(--accent-primary);
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(0, 217, 255, 0.2);
-}
-
-.contact-button.django-button {
-  background: #092e20;
-  color: #ffffff;
-  border-color: #092e20;
-}
-
-.contact-button.django-button:hover {
-  background: transparent;
-  color: #44b78b;
-  border-color: #44b78b;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(68, 183, 139, 0.2);
-}
-
-.contact-button.database-button {
-  background: #336791;
-  color: #ffffff;
-  border-color: #336791;
-}
-
-.contact-button.database-button:hover {
-  background: transparent;
-  color: #4e9be9;
-  border-color: #4e9be9;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(78, 155, 233, 0.2);
 }
 
 /* =============================================================================
@@ -441,38 +391,6 @@ footer p {
   color: var(--text-muted);
   font-size: 0.9rem;
   font-family: "JetBrains Mono", monospace;
-}
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.footer-icon {
-  color: var(--text-muted);
-  transition: all 0.3s ease;
-  padding: 12px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--border-color);
-  background: var(--bg-tertiary);
-  text-decoration: none;
-}
-
-.footer-icon:hover {
-  color: var(--accent-primary);
-  border-color: var(--accent-primary);
-  background: rgba(0, 217, 255, 0.05);
-  transform: translateY(-2px);
-}
-
-.footer-icon svg {
-  width: 18px;
-  height: 18px;
 }
 
 /* =============================================================================
